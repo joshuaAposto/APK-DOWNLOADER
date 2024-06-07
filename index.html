@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK DOWNLOADER</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c6dff, #f0f0f0);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .header {
+            background-color: rgba(28, 109, 255, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+            animation: slideDown 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .header img {
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+            position: relative;
+            z-index: 1;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .puke {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #1c6dff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+        .puke:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        .wala {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .wala img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .wala div {
+            text-align: left;
+        }
+        .wala h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .wala p {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.8);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="nothing">
+        <h1>APK DOWNLOADER</h1>
+    </div>
+    <div class="container">
+        <div class="wala">
+            <img src="apk-img/ic_launcher.png" alt="nothing">
+            <div>
+                <h2>FB AUTO REACT</h2>
+                <p>Version: 1.0.2</p>
+                <p>Size: 2.30 MB</p>
+                <p>Owner: Joshua Apostol</p>
+            </div>
+        </div>
+        <a class="puke" href="apk-files/FbAutoReact_1.0.1.apk" download>Download APK</a>
+    </div>
+    <div class="container">
+        <div class="wala">
+            <img src="apk-img/Picsart_24-06-07_15-24-26-511.png" alt="nothing">
+            <div>
+                <h2>Octobot Remake</h2>
+                <p>Version: 1.0.0</p>
+                <p>Size: 281.03 kb</p>
+                <p>Owner: Yet Another FBBOT </p>
+            </div>
+        </div>
+        <a class="puke" href="apk-files/Octobot Remake_1.0.apk" download>Download APK</a>
+    </div>
+    <div class="footer">
+        &copy; 2024 Joshua Apostol. All rights reserved.
+    </div>
+</body>
+</html>
